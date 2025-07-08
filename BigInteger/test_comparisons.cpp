@@ -160,10 +160,10 @@ TEST(ComparisonTests, EdgeCasesNegative) {
     
     Integer e("-123456789012345678901234567890");
     Integer f("-123456789012345678901234567891");
-    EXPECT_LT(e, f);
-    EXPECT_LE(e, f);
-    EXPECT_GT(f, e);
-    EXPECT_GE(f, e);
+    EXPECT_GT(e, f);
+    EXPECT_GT(e, f);
+    EXPECT_LT(f, e);
+    EXPECT_LE(f, e);
 }
 
 TEST(ComparisonTests, RandomNegativeValues) {
